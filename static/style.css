@@ -189,6 +189,48 @@ hr.white_line {
         max-width: 98vw;
         box-sizing: border-box;
     }
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 18px;
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        z-index: 300;
+        cursor: pointer;
+    }
+    .menu-toggle span, .menu-toggle span:before, .menu-toggle span:after {
+        display: block;
+        position: absolute;
+        width: 28px;
+        height: 4px;
+        background: #00ff5e;
+        border-radius: 2px;
+        transition: 0.3s;
+        content: '';
+    }
+    .menu-toggle span {
+        top: 18px;
+        left: 6px;
+    }
+    .menu-toggle span:before {
+        top: -10px;
+        left: 0;
+        content: '';
+    }
+    .menu-toggle span:after {
+        top: 10px;
+        left: 0;
+        content: '';
+    }
+}
+
+@media (min-width: 601px) {
+    .menu-toggle {
+        display: none !important;
+    }
 }
 
 .hyperfixations{
