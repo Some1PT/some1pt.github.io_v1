@@ -22,6 +22,9 @@
 </head>
 <body>
     <nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">
+            <span></span>
+        </button>
         <ul>
             <li class="profilepic">
                 <img src="https://avatars.githubusercontent.com/u/84239821?v=4" alt="placeholder image" class="profile-img">
@@ -49,5 +52,13 @@
         </ul>
         <p>This Page is still under construction but expect more soon...</p>
     </div>
+    <script>
+    // Hamburger menu toggle for mobile
+    const menuToggle = document.getElementById('menu-toggle');
+    const navButtons = document.querySelector('.navigation_buttons');
+    menuToggle.addEventListener('click', function() {
+        navButtons.classList.toggle('show');
+    });
+    </script>
 </body>
 </html>
